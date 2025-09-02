@@ -19,10 +19,10 @@ struct HomeView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            // Use the full banner view
             MetalsPriceBannerView(metalPriceArray: sampleMetals)
-                .frame(height: 50)                  // constrain height
-                .frame(maxWidth: .infinity)         // make it expand to parent width
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+                .border(Color.red, width: 2)
             
             ScrollView {
                 // net worth view
@@ -30,7 +30,6 @@ struct HomeView: View {
                 // metal prices view
             }
         }
-        .background(Color.black)                    // optional, matches banner
     }
 }
 
