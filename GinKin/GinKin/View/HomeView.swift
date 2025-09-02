@@ -8,11 +8,38 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    let sampleMetals = [
+        TempMetalPrice(symbol: "GOLD", price: 3509.60, change: 0.46),
+        TempMetalPrice(symbol: "SILVER", price: 40.95, change: -0.53),
+        TempMetalPrice(symbol: "PLATINUM", price: 1429.50, change: 0.48),
+        TempMetalPrice(symbol: "PALLADIUM", price: 1163.00, change: -0.74),
+        TempMetalPrice(symbol: "RHODIUM", price: 7050.00, change: 2.17)
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 16) {
+            // Use the full banner view
+            MetalsPriceBannerView(metalPriceArray: sampleMetals)
+                .frame(height: 50)                  // constrain height
+                .frame(maxWidth: .infinity)         // make it expand to parent width
+            
+            ScrollView {
+                // net worth view
+                // line graph view
+                // metal prices view
+            }
+        }
+        .background(Color.black)                    // optional, matches banner
     }
 }
 
-#Preview {
-    HomeView()
+
+// tab bar L to R (Home, Stack, Settings
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+            .preferredColorScheme(.dark)
+    }
 }
