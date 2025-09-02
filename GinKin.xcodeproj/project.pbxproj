@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C548CB2E65996200FFFAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548C82E65996200FFFAAA /* ContentView.swift */; };
+		07C548CC2E65996200FFFAAA /* GinKinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548C92E65996200FFFAAA /* GinKinApp.swift */; };
+		07C548CD2E65996200FFFAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C548C72E65996200FFFAAA /* Assets.xcassets */; };
+		07C548D02E65996500FFFAAA /* GinKinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548CE2E65996500FFFAAA /* GinKinTests.swift */; };
+		07C548D42E65996800FFFAAA /* GinKinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548D12E65996800FFFAAA /* GinKinUITests.swift */; };
+		07C548D52E65996800FFFAAA /* GinKinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548D22E65996800FFFAAA /* GinKinUITestsLaunchTests.swift */; };
+		07C548DA2E6599B100FFFAAA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C548D92E6599B100FFFAAA /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C548AB2E65995900FFFAAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C548952E65995600FFFAAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C5489C2E65995600FFFAAA;
+			remoteInfo = GinKin;
+		};
+		07C548B52E65995900FFFAAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C548952E65995600FFFAAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C5489C2E65995600FFFAAA;
+			remoteInfo = GinKin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C5489D2E65995600FFFAAA /* GinKin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GinKin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C548AA2E65995900FFFAAA /* GinKinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GinKinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C548B42E65995900FFFAAA /* GinKinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GinKinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C548C72E65996200FFFAAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07C548C82E65996200FFFAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07C548C92E65996200FFFAAA /* GinKinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GinKinApp.swift; sourceTree = "<group>"; };
+		07C548CE2E65996500FFFAAA /* GinKinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GinKinTests.swift; sourceTree = "<group>"; };
+		07C548D12E65996800FFFAAA /* GinKinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GinKinUITests.swift; sourceTree = "<group>"; };
+		07C548D22E65996800FFFAAA /* GinKinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GinKinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07C548D92E6599B100FFFAAA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C5489A2E65995600FFFAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548A72E65995900FFFAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548B12E65995900FFFAAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C548942E65995600FFFAAA = {
+			isa = PBXGroup;
+			children = (
+				07C548CA2E65996200FFFAAA /* GinKin */,
+				07C548CF2E65996500FFFAAA /* GinKinTests */,
+				07C548D32E65996800FFFAAA /* GinKinUITests */,
+				07C5489E2E65995600FFFAAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C5489E2E65995600FFFAAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C5489D2E65995600FFFAAA /* GinKin.app */,
+				07C548AA2E65995900FFFAAA /* GinKinTests.xctest */,
+				07C548B42E65995900FFFAAA /* GinKinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C548CA2E65996200FFFAAA /* GinKin */ = {
+			isa = PBXGroup;
+			children = (
+				07C548C72E65996200FFFAAA /* Assets.xcassets */,
+				07C548C92E65996200FFFAAA /* GinKinApp.swift */,
+				07C548C82E65996200FFFAAA /* ContentView.swift */,
+				07C548DB2E659B1300FFFAAA /* API */,
+				07C548D72E65998A00FFFAAA /* Model */,
+				07C548D62E65997C00FFFAAA /* View */,
+				07C548D82E65998E00FFFAAA /* ViewModel */,
+			);
+			path = GinKin;
+			sourceTree = "<group>";
+		};
+		07C548CF2E65996500FFFAAA /* GinKinTests */ = {
+			isa = PBXGroup;
+			children = (
+				07C548CE2E65996500FFFAAA /* GinKinTests.swift */,
+			);
+			path = GinKinTests;
+			sourceTree = "<group>";
+		};
+		07C548D32E65996800FFFAAA /* GinKinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07C548D12E65996800FFFAAA /* GinKinUITests.swift */,
+				07C548D22E65996800FFFAAA /* GinKinUITestsLaunchTests.swift */,
+			);
+			path = GinKinUITests;
+			sourceTree = "<group>";
+		};
+		07C548D62E65997C00FFFAAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07C548D92E6599B100FFFAAA /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		07C548D72E65998A00FFFAAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		07C548D82E65998E00FFFAAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		07C548DB2E659B1300FFFAAA /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C5489C2E65995600FFFAAA /* GinKin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C548BE2E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKin" */;
+			buildPhases = (
+				07C548992E65995600FFFAAA /* Sources */,
+				07C5489A2E65995600FFFAAA /* Frameworks */,
+				07C5489B2E65995600FFFAAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GinKin;
+			packageProductDependencies = (
+			);
+			productName = GinKin;
+			productReference = 07C5489D2E65995600FFFAAA /* GinKin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07C548A92E65995900FFFAAA /* GinKinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C548C12E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKinTests" */;
+			buildPhases = (
+				07C548A62E65995900FFFAAA /* Sources */,
+				07C548A72E65995900FFFAAA /* Frameworks */,
+				07C548A82E65995900FFFAAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C548AC2E65995900FFFAAA /* PBXTargetDependency */,
+			);
+			name = GinKinTests;
+			packageProductDependencies = (
+			);
+			productName = GinKinTests;
+			productReference = 07C548AA2E65995900FFFAAA /* GinKinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07C548B32E65995900FFFAAA /* GinKinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C548C42E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKinUITests" */;
+			buildPhases = (
+				07C548B02E65995900FFFAAA /* Sources */,
+				07C548B12E65995900FFFAAA /* Frameworks */,
+				07C548B22E65995900FFFAAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C548B62E65995900FFFAAA /* PBXTargetDependency */,
+			);
+			name = GinKinUITests;
+			packageProductDependencies = (
+			);
+			productName = GinKinUITests;
+			productReference = 07C548B42E65995900FFFAAA /* GinKinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C548952E65995600FFFAAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					07C5489C2E65995600FFFAAA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					07C548A92E65995900FFFAAA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 07C5489C2E65995600FFFAAA;
+					};
+					07C548B32E65995900FFFAAA = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 07C5489C2E65995600FFFAAA;
+					};
+				};
+			};
+			buildConfigurationList = 07C548982E65995600FFFAAA /* Build configuration list for PBXProject "GinKin" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C548942E65995600FFFAAA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 07C5489E2E65995600FFFAAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C5489C2E65995600FFFAAA /* GinKin */,
+				07C548A92E65995900FFFAAA /* GinKinTests */,
+				07C548B32E65995900FFFAAA /* GinKinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C5489B2E65995600FFFAAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C548CD2E65996200FFFAAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548A82E65995900FFFAAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548B22E65995900FFFAAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C548992E65995600FFFAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C548DA2E6599B100FFFAAA /* HomeView.swift in Sources */,
+				07C548CB2E65996200FFFAAA /* ContentView.swift in Sources */,
+				07C548CC2E65996200FFFAAA /* GinKinApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548A62E65995900FFFAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C548D02E65996500FFFAAA /* GinKinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C548B02E65995900FFFAAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C548D42E65996800FFFAAA /* GinKinUITests.swift in Sources */,
+				07C548D52E65996800FFFAAA /* GinKinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C548AC2E65995900FFFAAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C5489C2E65995600FFFAAA /* GinKin */;
+			targetProxy = 07C548AB2E65995900FFFAAA /* PBXContainerItemProxy */;
+		};
+		07C548B62E65995900FFFAAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C5489C2E65995600FFFAAA /* GinKin */;
+			targetProxy = 07C548B52E65995900FFFAAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07C548BC2E65995900FFFAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07C548BD2E65995900FFFAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C548BF2E65995900FFFAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M79DDHHKU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07C548C02E65995900FFFAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5M79DDHHKU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07C548C22E65995900FFFAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GinKin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GinKin";
+			};
+			name = Debug;
+		};
+		07C548C32E65995900FFFAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GinKin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GinKin";
+			};
+			name = Release;
+		};
+		07C548C52E65995900FFFAAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GinKin;
+			};
+			name = Debug;
+		};
+		07C548C62E65995900FFFAAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greggyphenom.GinKinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GinKin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C548982E65995600FFFAAA /* Build configuration list for PBXProject "GinKin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C548BC2E65995900FFFAAA /* Debug */,
+				07C548BD2E65995900FFFAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C548BE2E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C548BF2E65995900FFFAAA /* Debug */,
+				07C548C02E65995900FFFAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C548C12E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C548C22E65995900FFFAAA /* Debug */,
+				07C548C32E65995900FFFAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C548C42E65995900FFFAAA /* Build configuration list for PBXNativeTarget "GinKinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C548C52E65995900FFFAAA /* Debug */,
+				07C548C62E65995900FFFAAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C548952E65995600FFFAAA /* Project object */;
+}
