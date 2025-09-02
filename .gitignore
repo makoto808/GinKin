@@ -1,0 +1,24 @@
+# Xcode
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+# Build products
+build/
+DerivedData/
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+
+# macOS system files
+.DS_Store
+
+# SwiftData runtime files (optional)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
