@@ -15,19 +15,6 @@ DerivedData/
 # Swift Package Manager
 .build/
 
-# CocoaPods
-# Pods/
-# *.xcworkspace
-
-# Carthage
-Carthage/Build/
-
-# fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
-
 # macOS system files
 .DS_Store
 
