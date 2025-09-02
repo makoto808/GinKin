@@ -1,0 +1,37 @@
+# Xcode
+xcuserdata/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
+# Build products
+build/
+DerivedData/
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+# Pods/
+# *.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# macOS system files
+.DS_Store
+
+# SwiftData runtime files (optional)
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
