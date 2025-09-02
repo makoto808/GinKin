@@ -39,6 +39,7 @@ struct MetalsPriceBannerView: View {
                     }
                 }
                 .offset(x: offsetX)
+                .frame(maxHeight: .infinity, alignment: .center)
                 .onAppear {
                     let duration = Double(rowWidth / speed)
                     withAnimation(.linear(duration: duration).repeatForever(autoreverses: false)) {
@@ -55,6 +56,7 @@ struct MetalsPriceBannerView: View {
                     
                     Spacer()
                 }
+                .frame(maxHeight: .infinity, alignment: .center)
                 .background(
                     GeometryReader { rowGeo in
                         Color.clear
