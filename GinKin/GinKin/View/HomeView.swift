@@ -24,18 +24,7 @@ struct HomeView: View {
 //                .border(Color.red, width: 2) // debug border
             
             ScrollView {
-                HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Net Worth")
-                        .font(.headline)
-                    
-                    Text("$1,832,187") // dollars
-                        .font(.title) +
-                    Text(".69") // cents
-                        .font(.title2) // smaller font
-                }
-                .frame(maxWidth: .infinity, alignment: .leading) // forces leading alignment
-                .padding(.horizontal) // optional padding from edges
+                NetWorthView()
                 
                 MetalPriceLineGraph(prices: [
                     120, 123, 121, 125, 121, 127, 131, 134, 132, 136,
