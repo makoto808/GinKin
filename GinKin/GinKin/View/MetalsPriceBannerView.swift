@@ -9,42 +9,77 @@ import SwiftUI
 
 struct MetalsPriceBannerView: View {
     let metalPriceArray: [TempMetalPrice]
-    let speed: Double = 20
-    
-    @State private var animate = false
-    
+    let spacing: CGFloat = 40
+    let speed: CGFloat = 40 // points per second
+
+    @State private var offsetX: CGFloat = 0
+    @State private var rowWidth: CGFloat? = nil
+
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 40) {
-                ForEach(metalPriceArray) { metal in
-                    MetalPriceBanner(metal: metal)
+        GeometryReader { geo in
+            if let rowWidth = rowWidth {
+                HStack(spacing: 0) {
+                    // Duplicate the row twice for seamless looping
+                    HStack(spacing: spacing) {
+                        ForEach(metalPriceArray) { metal in
+                            MetalPriceBanner(metal: metal)
+                                .fixedSize()
+                        }
+                        
+                        Spacer()
+                    }
+
+                    HStack(spacing: spacing) {
+                        ForEach(metalPriceArray) { metal in
+                            MetalPriceBanner(metal: metal)
+                                .fixedSize()
+                        }
+                        
+                        Spacer()
+                    }
                 }
-                ForEach(metalPriceArray) { metal in
-                    MetalPriceBanner(metal: metal) // duplicate for smooth loop later
+                .offset(x: offsetX)
+                .frame(maxHeight: .infinity, alignment: .center)
+                .onAppear {
+                    let duration = Double(rowWidth / speed)
+                    withAnimation(.linear(duration: duration).repeatForever(autoreverses: false)) {
+                        offsetX = -rowWidth
+                    }
                 }
+            } else {
+                // Measure the row width dynamically
+                HStack(spacing: spacing) {
+                    ForEach(metalPriceArray) { metal in
+                        MetalPriceBanner(metal: metal)
+                            .fixedSize()
+                    }
+                    
+                    Spacer()
+                }
+                .frame(maxHeight: .infinity, alignment: .center)
+                .background(
+                    GeometryReader { rowGeo in
+                        Color.clear
+                            .onAppear {
+                                rowWidth = rowGeo.size.width
+                                offsetX = 0
+                            }
+                    }
+                )
             }
-            .padding(.horizontal)
         }
         .frame(height: 50)
-        .background(Color.black)
-        .border(Color.red, width: 2) 
+        .clipped()
     }
 }
 
-
-
 #Preview {
-    ScrollView(.horizontal, showsIndicators: false) {
-        HStack(spacing: 40) {
-            MetalPriceBanner(metal: TempMetalPrice(symbol: "GOLD", price: 3509.60, change: 0.46))
-            MetalPriceBanner(metal: TempMetalPrice(symbol: "SILVER", price: 40.95, change: -0.53))
-            MetalPriceBanner(metal: TempMetalPrice(symbol: "PLATINUM", price: 1429.50, change: 0.48))
-            MetalPriceBanner(metal: TempMetalPrice(symbol: "PALLADIUM", price: 1163.00, change: -0.74))
-            MetalPriceBanner(metal: TempMetalPrice(symbol: "RHODIUM", price: 7050.00, change: 2.17))
-        }
-        .padding()
-        .frame(height: 50)
-        .background(Color.black)
-    }
+    MetalsPriceBannerView(metalPriceArray: [
+        TempMetalPrice(symbol: "GOLD", price: 3509.60, change: 0.46),
+        TempMetalPrice(symbol: "SILVER", price: 40.95, change: -0.53),
+        TempMetalPrice(symbol: "PLATINUM", price: 1429.50, change: 0.48),
+        TempMetalPrice(symbol: "PALLADIUM", price: 1163.00, change: -0.74),
+        TempMetalPrice(symbol: "RHODIUM", price: 7050.00, change: 2.17)
+    ])
     .preferredColorScheme(.dark)
 }

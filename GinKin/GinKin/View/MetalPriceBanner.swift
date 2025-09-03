@@ -11,16 +11,22 @@ struct MetalPriceBanner: View {
     let metal: TempMetalPrice
     
     var body: some View {
-        HStack {
+        HStack(spacing: 8) {
             Text(metal.symbol)
                 .font(.system(size: 20, weight: .semibold, design: .default))
                 .foregroundColor(.white)
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
             Text(String(format: "$ %.2f", metal.price))
                 .font(.system(size: 20, weight: .semibold, design: .default))
                 .foregroundColor(.white)
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
             Text(String(format: "%.2f %%", metal.change))
                 .font(.system(size: 20, weight: .semibold, design: .default))
                 .foregroundColor(metal.change >= 0 ? .green : .red)
+                .lineLimit(1)
+                .fixedSize(horizontal: true, vertical: false)
         }
     }
 }

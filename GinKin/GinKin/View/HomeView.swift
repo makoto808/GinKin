@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    let sampleMetals = [
+    @State private var metals: [TempMetalPrice] = [
         TempMetalPrice(symbol: "GOLD", price: 3509.60, change: 0.46),
         TempMetalPrice(symbol: "SILVER", price: 40.95, change: -0.53),
         TempMetalPrice(symbol: "PLATINUM", price: 1429.50, change: 0.48),
@@ -19,27 +18,34 @@ struct HomeView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            // Use the full banner view
-            MetalsPriceBannerView(metalPriceArray: sampleMetals)
-                .frame(height: 50)                  // constrain height
-                .frame(maxWidth: .infinity)         // make it expand to parent width
+            MetalsPriceBannerView(metalPriceArray: metals)
+                .frame(height: 50)
+                .frame(maxWidth: .infinity)
+//                .border(Color.red, width: 2) // debug border
             
             ScrollView {
-                // net worth view
-                // line graph view
-                // metal prices view
+                NetWorthView()
+                
+                MetalPriceLineGraph(prices: [
+                    120, 123, 121, 125, 121, 127, 131, 134, 132, 136,
+                    138, 137, 141, 145, 143, 148, 150, 149, 153, 157
+                ])
             }
+
         }
-        .background(Color.black)                    // optional, matches banner
+        .background(Color("AppBackgroundColor"))
     }
 }
 
-
+#Preview {
+    HomeView()
+        .preferredColorScheme(.dark)
+}
 // tab bar L to R (Home, Stack, Settings
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-            .preferredColorScheme(.dark)
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeView()
+//            .preferredColorScheme(.dark)
+//    }
+//}

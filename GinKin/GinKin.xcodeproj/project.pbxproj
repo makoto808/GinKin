@@ -17,6 +17,9 @@
 		07C5491F2E669EC600FFFAAA /* TempMetalPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5491E2E669EC600FFFAAA /* TempMetalPrice.swift */; };
 		07C549212E669FF400FFFAAA /* MetalsPriceBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C549202E669FF400FFFAAA /* MetalsPriceBannerView.swift */; };
 		07C549232E66A08900FFFAAA /* MetalPriceBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C549222E66A08900FFFAAA /* MetalPriceBanner.swift */; };
+		07C549272E66E1FF00FFFAAA /* MetalPriceBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C549262E66E1FF00FFFAAA /* MetalPriceBannerViewModel.swift */; };
+		07C5492B2E66EE7D00FFFAAA /* MetalPriceLineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5492A2E66EE7C00FFFAAA /* MetalPriceLineGraph.swift */; };
+		07C5492D2E68300D00FFFAAA /* NetWorthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5492C2E68300D00FFFAAA /* NetWorthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		07C5491E2E669EC600FFFAAA /* TempMetalPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempMetalPrice.swift; sourceTree = "<group>"; };
 		07C549202E669FF400FFFAAA /* MetalsPriceBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalsPriceBannerView.swift; sourceTree = "<group>"; };
 		07C549222E66A08900FFFAAA /* MetalPriceBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPriceBanner.swift; sourceTree = "<group>"; };
+		07C549262E66E1FF00FFFAAA /* MetalPriceBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPriceBannerViewModel.swift; sourceTree = "<group>"; };
+		07C5492A2E66EE7C00FFFAAA /* MetalPriceLineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPriceLineGraph.swift; sourceTree = "<group>"; };
+		07C5492C2E68300D00FFFAAA /* NetWorthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				07C548D92E6599B100FFFAAA /* HomeView.swift */,
+				07C5492C2E68300D00FFFAAA /* NetWorthView.swift */,
 				07C549222E66A08900FFFAAA /* MetalPriceBanner.swift */,
 				07C549202E669FF400FFFAAA /* MetalsPriceBannerView.swift */,
+				07C5492A2E66EE7C00FFFAAA /* MetalPriceLineGraph.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 		07C548D82E65998E00FFFAAA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				07C549262E66E1FF00FFFAAA /* MetalPriceBannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -297,9 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C548DA2E6599B100FFFAAA /* HomeView.swift in Sources */,
+				07C549272E66E1FF00FFFAAA /* MetalPriceBannerViewModel.swift in Sources */,
 				07C549212E669FF400FFFAAA /* MetalsPriceBannerView.swift in Sources */,
 				07C548CB2E65996200FFFAAA /* ContentView.swift in Sources */,
+				07C5492B2E66EE7D00FFFAAA /* MetalPriceLineGraph.swift in Sources */,
 				07C548CC2E65996200FFFAAA /* GinKinApp.swift in Sources */,
+				07C5492D2E68300D00FFFAAA /* NetWorthView.swift in Sources */,
 				07C5491F2E669EC600FFFAAA /* TempMetalPrice.swift in Sources */,
 				07C549232E66A08900FFFAAA /* MetalPriceBanner.swift in Sources */,
 			);
