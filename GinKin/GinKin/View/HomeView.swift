@@ -24,6 +24,7 @@ struct HomeView: View {
 //                .border(Color.red, width: 2) // debug border
             
             ScrollView {
+                HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("Net Worth")
                         .font(.headline)
